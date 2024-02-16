@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Página web de blog de café">
+    <link rel="icon" type="jpg/png" href="img/ico-coffee1.png">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Preload -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- OPEN GRAPH-->
+    <title>Blog de Café</title>
+</head>
+<body>
+    <div class="hero">
+        <header class="header contenedor">
+            <span class="logo"><a href="index.html"> Blogde<strong>Café</strong></a></span>
+            <nav class="header-nav">
+                <ul id="nav-ul">
+                    <li><a class="nav-ul-li_a" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="nav-ul-li_a" href="cursos.html">Cursos</a></li>
+                    <li><a class="nav-ul-li_a" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>    
+            <div id="cont-ico-responsive">
+                <label for="input-check" id="cont-drop-menu">
+                    <input type="checkbox" name="menu" id="input-check">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </label> 
+
+                <nav class="nav-responsive">
+                    <ul id="nav-responsive-ul">
+                        <li><a class="nav-ul-li_a" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-ul-li_a" href="cursos.html">Cursos</a></li>
+                        <li><a class="nav-ul-li_a" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>     
+            </div>
+        </header>
+        <section class="contenedor cont-h1 centrar-texto">
+            <h1 id="h1-principal">Blog de café con consejos y cursos</h1>
+            <p>Aprende de los expertos con las mejores recetas y consejos</p>
+        </section>
+    </div>
+
+    <div class="contenedor cont-grid">
+        <main id="cont-main">
+            <section class="cont-sections margin-top">
+                <h4 class="margin-buttom">Nuestro Blog</h4>
+                <img class="img-blog" src="../img/blog1.jpg" alt="Imagen de granos de café 4k">
+                <h4 class="margin-top">Tipos de Grano de Café</h4>
+                <p>Lorem ipsum dolor sitamet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?</p>
+                <button class="button">LEER ENTRADA</button>
+                <hr>
+            </section>
+            <section class="cont-sections margin-top">
+                <img class="img-blog" src="../img/blog2.jpg" alt="Imagen de una taza café con cubiertos, postres, unas gafas y platos">
+                <h4 class="margin-top">3 Deliciosas Recetas de Café</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?
+                </p>
+                <button class="button">LEER ENTRADA</button>
+                <hr>
+            </section>
+            <section class="cont-sections margin-top">
+                <img class="img-blog" src="../img/blog3.jpg" alt="Imagen de taza de café con granaos de café al rededor">
+                <h4>Beneficios del Café</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, rerum, reprehenderit consequatur perferendis officia, vitae fuga animi temporibus itaque atque reiciendis ea excepturi! Molestias aperiam fugiat deleniti laudantium atque numquam?
+                </p>
+                <button class="button">LEER ENTRADA</button>
+                
+            </section>
+        </main>
+        <aside id="cont-aside">
+            <h4 class="margin-buttom" >Nuestros Cursos y Talleres</h4>
+            <section>
+                <h4 class="h4-brown">Técnicas de Extracción de Café</h4>
+                <p class="margin-top"><strong>Precio:</strong>  Gratis</p>
+                <p><strong>Cupo:</strong>  20</p>
+                <button class="button">MÁS INFORMACIÓN SOBRE NUESTROS CURSOS</button>
+                <hr>
+            </section>
+            <section>
+                <h4 class="h4-brown">4 Recetas de Café para Principiantes</h4>
+                <p class="margin-top"><strong>Precio:</strong>  Gratis</p>
+                <p><strong>Cupo:</strong>  20</p>
+                <button class="button">MÁS INFORMACIÓN SOBRE NUESTROS CURSOS</button>
+                <hr>
+            </section>       
+        </aside>
+    </div>
+
+    <footer id="footer">
+        <div class="contenedor">
+            <section>
+                <span class="logo">Blogde<strong>Café</strong></span>
+            </section>
+            <section class="cont-proyectos">
+                <p>Front End Blog by Moises Sardinha © Todos los derechos Reservados 2023.</p>
+                <p>Otros proyectos:</p>
+                <a id="a-footer" href="https://sitesafemoi.github.io/moises-proyecto1/" target="_blank" style="color:#5f9ea0">Sito web "Freelancer"</a> <br>
+                <a id="a-footer"	 href="https://sitesafemoi.github.io/web-autos/" target="_blank" style="color:#5f9ea0">Sito web "Autos"</a> <br>
+                <a id="a-footer" href="https://sitesafemoi.github.io/annie-brice-ecomerce/" target="_blank" style="color:#5f9ea0">Sito web "Annie & Brice - Ecomerce"</a>
+            </section>    
+        </div>    
+    </footer>
+</body>
+</html>

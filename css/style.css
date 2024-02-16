@@ -1,0 +1,282 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */    
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+/*Variables*/
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --blanco-oscuro:#f9f9f9;
+    --blanco-bordes:#E1E1E1;
+    --negro: #000000;
+    --trasparente:#442e2ed3;
+}
+
+
+/** Globales **/
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    border-radius: .5rem;
+    max-width: 100%;
+}
+
+img,.button {
+    border-radius: .5rem;
+}
+h1::selection,h2::selection,h4::selection,h3::selection,p::selection,strong::selection,span::selection{
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+/** Utilidades **/
+   
+.contenedor{
+    max-width: 100rem;
+    width: min(90%, 120rem);
+    margin:0 auto;
+}
+.centrar-texto{
+    text-align: center;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+.margin-top-4{
+    margin-top: 4rem;
+}
+.margin-buttom{
+    margin-bottom: 2rem;
+}
+.text-brown{
+    color: var(--primario);
+}
+.margin-left{
+    margin-left: .5rem;
+}
+/*Imagen de fondo de la seccion 1*/
+.hero{
+    width: 100%;
+    height: 60rem;
+    background-image: url(../img/banner.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/*header*/
+.header{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    font-size: 4.5rem;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+}
+.logo strong{
+    font-weight: bolder;
+}
+.header-nav{
+    width:100%;
+}
+#nav-ul{
+    display: flex;
+    gap: 1.9rem;
+    justify-content:end;
+}
+.nav-ul-active{
+    padding-bottom: .2rem;
+    border-bottom: .3rem solid var(--blanco);
+}
+.header-nav li,a{
+    list-style: none;
+    color: var(--blanco);
+}
+.nav-ul{
+    padding-bottom: .2rem;
+    border-bottom: .3rem solid var(--blanco);
+}
+.nav-ul-li_a{
+    transition: all .1s ease-out;
+}
+.nav-ul-li_a:hover{
+    padding-bottom: .2rem;
+    border-bottom: .3rem solid var(--blanco);
+}
+
+/*Estilos al menu hamburgesa*/
+#cont-ico-responsive{
+    display: none;
+    width: 8.5rem;
+    height: 3.5rem;
+}
+#input-check{
+    display: none;
+}
+
+#cont-drop-menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: .2rem;
+}
+.line{
+    width: 100%;
+    height: .7rem;
+    background-color: var(--blanco);
+    border-radius: .5rem;
+}
+/*Menu responsive cont*/
+.nav-responsive{
+    position: absolute;
+    z-index: 1000;
+    width: 80%;
+    right: 0;
+    top: -60rem;
+    height: 60rem;
+    background-color: var(--trasparente);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-in;
+}
+#nav-responsive-ul{
+    display: flex;  
+    flex-direction: column; 
+    gap: 1rem;
+}
+#nav-responsive-ul li{
+    color: var(--blanco);
+    list-style: none;
+    font-size: 2rem;
+}
+/*responsive al header-nav*/
+@media screen and (max-width:520px){
+    #nav-ul{
+        display:none;
+    }
+    .header-nav{
+        display: flex;
+        justify-content: end;
+    }
+    #cont-ico-responsive{
+        display:block;
+    }
+    #cont-ico-responsive:hover .nav-responsive{
+        display:flex;
+        right: 0;
+        top: -1rem;
+    }
+}
+/*Estilos contenedor h1*/
+.cont-h1{
+    margin-top: 12.5rem;
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont-h1 h1{
+    font-size: 4.0rem;
+    margin-bottom: 1rem;
+}
+
+/*Contenedor grid del aside y el main*/
+.cont-grid{
+    display: grid;
+    grid-template-columns:65% 35%;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    
+}
+/*Estilos del botton "LEER ENTRADA"*/
+.button{
+    padding: 1.5rem;
+    border:.2rem solid transparent;
+    border-width: .2rem;
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+    color: var(--blanco);
+    background-color: var(--negro);
+    margin: 2rem 0;
+    transition:ease-in-out .2s;
+}
+.button:hover{
+    transform: scale(1.05);
+    border: .2rem solid var(--primario);
+    background-color: var(--primario);
+    cursor: pointer;
+}
+
+/*Efecto hover en las imagenes*/
+#cont-main{
+    overflow:none;
+}
+.img-blog{
+    transition: transform .3s;
+}
+.img-blog:hover{
+    transform: scale(1.015);    
+}
+/*Estilos aside*/
+#cont-aside{
+    padding-top: 2rem;
+}
+.h4-brown{
+    color: var(--primario);
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+/*Responsive al main y aside*/
+@media screen and (max-width:520px){
+    .cont-grid{
+        grid-template-columns: 1fr;
+    }
+}
+/*footer*/
+#footer{
+    width: 100%;
+    height: 31rem;
+    background-color: var(--negro);
+    margin-top: 3rem;
+    text-align: center;
+    color: var(--blanco);
+}
+.cont-proyectos a{
+    text-decoration: underline;
+    transition: color .3s ease;
+}

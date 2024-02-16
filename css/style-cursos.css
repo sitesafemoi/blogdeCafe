@@ -1,0 +1,24 @@
+/* Estilos a la pagina de "Cursos"  */
+
+.article-curso{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-row: 1fr;
+    column-gap: 1.3rem;
+    width: 100%;
+}
+@media screen and (max-width:768px){
+    .article-curso{
+        max-height: 115rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+/*
+@media screen and (max-width:520px){
+    .cont-form-label{
+        padding-right: .9rem;
+    }
+}
+*/

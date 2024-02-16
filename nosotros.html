@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Página web de blog de café">
+    <link rel="icon" type="jpg/png" href="img/ico-coffee1.png">
+    <!-- Prefetch -->
+    <link rel="prefetch" href="nosotros.html" as="document">
+
+    <!-- Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"  crossorigin="crossorigin" as="font">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Preload -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/style-nosotros.css" as="style">
+    <link rel="stylesheet" href="css/style-nosotros.css">
+    <!-- OPEN GRAPH-->
+    <title>Blog de Café - Nosotros</title>
+</head>
+<body>
+    <div class="hero">
+        <header class="header contenedor">
+            <span class="logo"><a href="index.html"> Blogde<strong>Café</strong></a></span>
+            <nav class="header-nav">
+                <ul id="nav-ul">
+                    <li><a class="nav-ul-active nav-ul-li_a" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="nav-ul-li_a" href="cursos.html">Cursos</a></li>
+                    <li><a class="nav-ul-li_a" href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>    
+            <div id="cont-ico-responsive">
+                <label for="input-check" id="cont-drop-menu">
+                    <input type="checkbox" name="menu" id="input-check">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </label> 
+
+                <nav class="nav-responsive">
+                    <ul id="nav-responsive-ul">
+                        <li><a class="nav-ul-li_a nav-ul-active" href="nosotros.html">Nosotros</a></li>
+                        <li><a class="nav-ul-li_a" href="cursos.html">Cursos</a></li>
+                        <li><a class="nav-ul-li_a" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>     
+            </div>
+        </header>
+        <section class="contenedor cont-h1 centrar-texto">
+            <h1 id="h1-principal">Blog de café con consejos y cursos</h1>
+            <p>Aprende de los expertos con las mejores recetas y consejos</p>
+        </section>
+    </div>
+
+    <main class="contenedor">
+        <h3 class="centrar-texto margin-top">Sobre Nosotros</h3>
+        <section class="cont-grid-nosotros margin-top">
+            <div>
+                <img src="img/nosotros.jpg" alt="Muchas tasas de café">
+            </div>
+            <div>
+                <p>Pellentesque lacus orci, mattis cursus est in, finibus sagittis mi. Sed iaculis elit et porta luctus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas lacinia est vitae eros posuere, non commodo justo viverra. Sed finibus id elit sit amet egestas. Nullam ac urna odio. Fusce vestibulum venenatis quam in scelerisque. Maecenas ultricies ultricies velit, non suscipit enim. Vivamus massa velit, lobortis fringilla laoreet in, suscipit vitae velit. Etiam at orci euismod magna rhoncus luctus. Curabitur viverra est ut elit gravida rutrum. Nullam eget viverra enim. Quisque vitae varius urna.
+                </p>
+               
+            </div>
+        </section>
+    </main>
+    
+    <section class="contenedor cont-cards">
+
+        <div class="card">
+            <img src="img/img-card1.jpg" alt="Tasas de café" style="width:100%;">
+            <div class="card__content">
+              <p class="card__title">Amantes del café</p>
+              <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/img-card2.jpg" alt="Tasas de café" style="width:100%;">
+            <div class="card__content">
+              <p class="card__title">Café saludable</p>
+              <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/img-card3.jpg" alt="Tasas de café" style="width:100%;">
+            <div class="card__content">
+              <p class="card__title">Lo mejor del café</p>
+              <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            </div>
+        </div>
+          
+    </section>
+    <footer id="footer">
+        <div class="contenedor">
+            <section>
+                <span class="logo">Blogde<strong>Café</strong></span>
+            </section>
+            <section class="cont-proyectos">
+                <p>Front End Blog by Moises Sardinha © Todos los derechos Reservados 2023.</p>
+                <p>Otros proyectos:</p>
+                <a id="a-footer" href="https://sitesafemoi.github.io/moises-proyecto1/" target="_blank" style="color:#5f9ea0">Sito web "Freelancer"</a> <br>
+                <a id="a-footer"	 href="https://sitesafemoi.github.io/web-autos/" target="_blank" style="color:#5f9ea0">Sito web "Autos"</a> <br>
+                <a id="a-footer" href="https://sitesafemoi.github.io/annie-brice-ecomerce/" target="_blank" style="color:#5f9ea0">Sito web "Annie & Brice - Ecomerce"</a>
+            </section>    
+        </div>    
+    </footer>
+</body>
+</html>
