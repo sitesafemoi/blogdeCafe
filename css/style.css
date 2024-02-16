@@ -173,6 +173,7 @@ h1::selection,h2::selection,h4::selection,h3::selection,p::selection,strong::sel
     justify-content: center;
     align-items: center;
     transition: all .5s ease-in;
+    border-radius: .5rem;
 }
 #nav-responsive-ul{
     display: flex;  
