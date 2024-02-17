@@ -30,10 +30,15 @@
 @media screen and (max-width:829px){
     .cont-cards{
         grid-template-columns:1fr;
-        width: 70%;
+        width: min(60%, 30rem);
         row-gap: 2rem;
         column-gap: 2rem;
     }
+}
+@media screen and (max-width:829px){
+  .cont-cards{
+      width: min(100%, 30rem);
+  }
 }
 .card {
     position: relative;
