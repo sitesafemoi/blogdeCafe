@@ -1,14 +1,31 @@
-// *ejercicio de enviar los datos a un objeto*
+// *Validacion del formulario* 
+
+const LabelNombre = document.querySelector(`#name`)
+const LabelEmail = document.querySelector(`#email`)
+const LabelMensaje = document.querySelector(`#mensaje`)
+const formulario = document.querySelector(`#cont-form`)
+
+formulario.addEventListener(`submit`, (e) => {
+    e.preventDefault();
+    formularioEnviado();
+})
+
+async function formularioEnviado(){
+    await Swal.fire(
+        'Gracias!',
+        'Formulario enviado correctamente',
+        'success'
+        )
+    window.location.href = `index.html`
+}
+
+// *Ejercicio de enviar los datos a un objeto*
 
 // const datos = {
 //     name: ``,
 //     email: ``,
 //     mensaje: ``
 // }
-
-const LabelNombre = document.querySelector(`#name`)
-const LabelEmail = document.querySelector(`#email`)
-const LabelMensaje = document.querySelector(`#mensaje`)
 
 // LabelNombre.addEventListener(`input`, enviarTexto)
 // LabelEmail.addEventListener(`input`, enviarTexto)
@@ -20,18 +37,4 @@ const LabelMensaje = document.querySelector(`#mensaje`)
 //     datos[e.target.id] = e.target.value
 //      console.log(datos)
 // }
-
-
-
-// *Validacion del formulario* 
-
-
-// LabelNombre.addEventListener(`change`, enviarTexto)
-// LabelEmail.addEventListener(`change`, enviarTexto)
-// LabelMensaje.addEventListener(`change`, enviarTexto)
-
-
-// LabelNombre.addEventListener(`change`,())
-
-
 
